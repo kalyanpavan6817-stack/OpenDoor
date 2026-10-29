@@ -141,14 +141,3 @@ Do not commit dependency caches, build output, credentials or real student infor
 
 **Real screenshots:** [Desktop landing](docs/landing-desktop.jpg), [mobile landing](docs/landing-mobile.jpg), and [desktop preview](docs/landing-preview.jpg). These are captures of the running production build. Additional results/planner screenshots remain optional submission work. Capture those at desktop 1440×1000 and mobile 390×844.
 
-**Demo video: placeholder — insert your real public/unlisted video link here.**
-
-Suggested 1–3 minute recording:
-
-1. (0:00–0:20) Explain the discovery problem and show the landing page.
-2. (0:20–0:50) Enter a clearly labeled demo scenario: Telangana, postgraduate, Science, year 1, regular/full-time. Leave optional attributes unanswered.
-3. (0:50–1:20) Show PG matches, unknown age/recognition checks and criterion-level sources. Explain why relevance is not eligibility.
-4. (1:20–1:50) Save a record, tick planner tasks, visit the saved page and export JSON.
-5. (1:50–2:20) Show methodology, partial verification, privacy and mobile layout. Explain the absence of paid APIs and the current-data limitations.
-
-Use synthetic answers, record the real running app, and confirm that the saved shortlist persists after refresh while the profile disappears.
