@@ -1,0 +1,7 @@
+'use client';
+import Link from 'next/link';
+import {usePathname} from 'next/navigation';
+import {ArrowUpRight,Bookmark,DoorOpen} from 'lucide-react';
+import {useApp} from './provider';
+export function Header(){const path=usePathname();const {data,notice}=useApp();return <><header className="header"><Link href="/" className="brand" aria-label="OpenDoor home"><span className="logo"><DoorOpen size={23}/></span>OpenDoor<span className="brand-dot">.</span></Link><nav aria-label="Main navigation"><Link className={path==='/opportunities'?'active':''} href="/opportunities">Explore</Link><Link className={path==='/sources'?'active':''} href="/sources">Our approach</Link><Link href="/saved" className="saved-nav"><Bookmark size={16}/> Saved <span>{data.saved.length}</span></Link></nav><Link className="button small" href="/profile">Find my matches <ArrowUpRight size={16}/></Link></header>{notice&&<div className="storage-notice" role="status">{notice}</div>}</>}
+export function Footer(){return <footer><div><Link className="brand" href="/">OpenDoor.</Link><p>Find opportunities you shouldn’t have to search for alone.</p><small>Independent student project. Not a government service.</small></div><nav aria-label="Footer"><Link href="/sources#about">About</Link><Link href="/#how-it-works">How it works</Link><Link href="/sources">Sources</Link><Link href="/privacy">Privacy</Link><Link href="/sources#limitations">Limitations</Link></nav></footer>}
